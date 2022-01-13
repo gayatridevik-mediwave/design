@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./app/style.css" />
+  </head>
+  <body>
+    <div class="nav-wrap">
+      <div class="nav-group">
+        <div class="logo-blk">
+          <img src="./images/Yummy.png" alt="" />
+        </div>
+        <div class="nav-items">
+          <p class="active">Home</p>
+          <p>Recipe</p>
+        </div>
+      </div>
+    </div>
+    <section class="header">
+      <div class="header-text">
+        <p>New Recipe</p>
+      </div>
+    </section>
+
+    <div class="recipecontainer">
+      <div>
+        <h1 class="back"><a href="indexv.html"> < Back to home</a></h1>
+      </div>
+
+      <h2 class="add">Add your new recipe</h2>
+
+      <form id="addRecipeForm" class="recipeClass">
+        <div class="text-css">
+          <label for="recipe-card">Name of your recipe</label>
+          <input type="text" class="recipe-name" id="recipe-card" />
+        </div>
+
+        <div class="text-css">
+          <label for="recipe-images">Recipe Images</label>
+          <input type="text" class="recipe-name" id="recipe-images" />
+        </div>
+
+        <div class="mt-btn">
+          <button type="submit" id="buttonclr">Upload</button>
+        </div>
+      </form>
+
+      <div class="food-type">
+        <p>Food Type</p>
+
+        <input type="radio" value="Vegetarian" />
+        <label>Vegetarian</label><br />
+
+        <input type="radio" value="Non-Vegetarian" />
+        <label>Non-Vegetarian</label>
+      </div>
+
+      <div class="indrg-type">
+        <p>Ingridents required</p>
+        <textarea type="text" id="mention"></textarea>
+      </div>
+      <div class="indrg-type">
+        <p>Steps to prepare</p>
+        <textarea type="text" class="prepare" id="mention1"></textarea>
+      </div>
+      <div class="addrecipebtnclass">
+        <input type="submit" class="addrecipebtn" value="ADD RECIPE" />
+      </div>
+    </div>
+
+    <div class="footer-div">
+      <div class="yummy-footer">
+        <div>
+          <p id="yummy">Yummy</p>
+        </div>
+        <div class="footer-menu">
+          <a href="./index.html">Home</a>
+          <a href="./addrecipe.html">Recipe</a>
+        </div>
+        <div>
+          <img id="twitter" src="./images/twt.jpg" alt="twitterlogo" />
+          <img id="facebook" src="./images/face.jpg" alt="facebooklogo" />
+          <img id="insta" src="./images/inst.jpg" alt="instalogo" />
+        </div>
+      </div>
+      <div class="footer-year">
+        <p id="by">©2022 by yummy.</p>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
