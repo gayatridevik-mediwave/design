@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./app/style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="nav-wrap">
@@ -27,7 +27,7 @@
 
     <div class="recipecontainer">
       <div>
-        <h1 class="back"><a href="indexv.html"> < Back to home</a></h1>
+        <h1 class="back"><a href="./design.html"> < Back to home</a></h1>
       </div>
 
       <h2 class="add">Add your new recipe</h2>
@@ -51,20 +51,20 @@
       <div class="food-type">
         <p>Food Type</p>
 
-        <input type="radio" value="Vegetarian" />
+        <input type="radio" id="veg"value="Vegetarian" name="option" />
         <label>Vegetarian</label><br />
 
-        <input type="radio" value="Non-Vegetarian" />
+        <input type="radio" id="non-veg" value="Non-Vegetarian" name="option" />
         <label>Non-Vegetarian</label>
       </div>
 
       <div class="indrg-type">
         <p>Ingridents required</p>
-        <textarea type="text" id="mention"></textarea>
+        <textarea type="text" id="mention" name="ingrident"></textarea>        
       </div>
       <div class="indrg-type">
         <p>Steps to prepare</p>
-        <textarea type="text" class="prepare" id="mention1"></textarea>
+        <textarea type="text" class="prepare" id="mention1" name="ingrident1"></textarea>
       </div>
       <div class="addrecipebtnclass">
         <input type="submit" class="addrecipebtn" value="ADD RECIPE" />
@@ -80,10 +80,10 @@
           <a href="./index.html">Home</a>
           <a href="./addrecipe.html">Recipe</a>
         </div>
-        <div>
-          <img id="twitter" src="./images/twt.jpg" alt="twitterlogo" />
-          <img id="facebook" src="./images/face.jpg" alt="facebooklogo" />
-          <img id="insta" src="./images/inst.jpg" alt="instalogo" />
+        <div class="images">
+          <img id="twitter" src="./images/twi.png" alt="twitterlogo" />
+          <img id="facebook" src="./images/face.png" alt="facebooklogo" />
+          <img id="insta" src="./images/insta.png" alt="instalogo" />
         </div>
       </div>
       <div class="footer-year">
@@ -91,6 +91,6 @@
       </div>
     </div>
 
-    <script src="/script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

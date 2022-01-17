@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url('http://fonts.cdnfonts.com/css/apple-chancery');
 
 * {
   margin: 0;
@@ -137,20 +138,31 @@ h3 {
 }
 .footer-menu {
   display: flex;
+  justify-content: space-between;
 }
 .yummy-div {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 #yummy {
+  font-family: 'Apple Chancery', sans-serif;
+  font-size: 40px;
   color: #ffffff;
   opacity: 100%;
   width: 132px;
   height: 64px;
 }
+
+.yummy-footer .images{
+  margin-top: 15px;
+} 
+
 .footer-menu a {
   color: #ffff;
-  margin-left: 20px;
+  font-size:14px;
+  text-decoration: none;
+  margin: 19px;
 }
 .footer-year {
   border-top: 1px solid #ffffff;

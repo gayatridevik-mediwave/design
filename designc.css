@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url('http://fonts.cdnfonts.com/css/apple-chancery');
 
 * {
   margin: 0;
@@ -17,26 +18,52 @@ body {
   width: 133px;
   height: 64px;
 }
-nav {
-  margin-right: 163px;
+
+
+.nav-group{
+  display: flex;
+  justify-content: space-between;
+  width:80%;
+  margin:auto;
+  text-align:center;
 }
-nav ul li {
-  display: inline-block;
+
+.nav-items{
+  display: flex;
+  align-items: center;
+  }
+
+.nav-items a{
+  margin-left:30px;
 }
-nav ul li a {
-  font-family: "Poppins", sans-serif;
-  color: #363636;
-  font-size: 18px;
-  padding: 7px 15px;
-  border-radius: 50px;
-  margin: 0 3px;
+ .active{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 94px;
+  height: 33px;
+  color:#fff;
+  border-radius: 17px;
+  background-color:#00b158;
   text-decoration: none;
+} 
+
+
+.add{
+   display:flex;
+   justify-content: end;
+   padding: 10px 40px;
+   margin-bottom: 18px;
+   
+  
 }
-a.active,
-a:hover {
-  background: #00b158;
-  color: #ffffff;
-  transition: 0.5s;
+
+.add a{
+  background-color: #00b158;
+  color: #fff;
+  border-radius: 23px;
+  text-decoration:none;
+  padding: 10px 20px;
 }
 
 .header {
@@ -44,313 +71,198 @@ a:hover {
   background-image: url(./images/roza.png);
   background-color: black;
   opacity: 60;
-}
-.header-content {
-  margin: 0 auto;
-  max-width: 718px;
-}
-.hero-image {
-  background-image: url(img/leo-roza-P_z_xlMGuEk-unsplash@2x.png);
-  height: 600px;
-  background-position: center;
-  background-repeat: no-repeat;
+  
   background-size: cover;
-  position: relative;
+  
 }
-.hero-trans {
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
-}
-.hero-text {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  text-align: center;
+
+.header-content h1{
+  margin-bottom : 18px;
   font-size: 45px;
-  color: white;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -80%);
+  color:#fff;
+  text-align:center;
+  font-weight:unset;
+  
 }
-.box {
-  width: 580px;
-  height: 50px;
-  background-color: #f2f2f2;
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-  padding-left: 30px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 100%);
-}
-.searchInput {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-size: 14px;
-  background-color: #f2f2f2;
-  width: 500px;
-  height: auto;
-  border-radius: 30px;
-  border: 0;
-  width: -webkit-fill-available;
-  outline: none;
-}
-.searchIcon {
-  cursor: pointer;
-  margin-right: 40px;
-  color: #f2f2f2;
-  width: 26px;
-  height: 20px;
-  width: 23.01px;
-  height: 23.01px;
-  float: right;
-}
-div#section2 {
-  max-width: 80%;
-  margin: auto;
-}
-.text-h1 {
-  font-family: "Poppins", SemiBold;
-  font-style: normal;
-  text-align: center;
-  font-size: 20px;
-  color: #00b158;
-  margin-top: 53px;
-}
-.text-h2 {
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-  font-weight: bold;
-  font-size: 36px;
-  color: #17285a;
-  margin-top: 10px;
-}
-.button {
-  background-color: #4caf50;
-  border: none;
-  color: white;
-  margin-top: 18px;
-  font-weight: 700;
-  border-radius: 50px;
-  width: 187px;
-  height: 45px;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  cursor: pointer;
-  float: right;
-  position: static;
-}
-@media (max-width: 1458px) {
-  .hero-text {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -90%);
-  }
-}
-@media (max-width: 758px) {
-  .checkbtn {
-    background-image: url(img/Group\ 22.png);
-    display: block;
-    margin-right: 10px;
-  }
-  ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    float: right;
-    top: 80px;
-    left: -100%;
-    display: none;
-    text-align: center;
-    transition: all 0.5s;
-  }
-  .logo {
-    margin-left: 30px;
-  }
-  .hero-image {
-    background-image: url(./images/roza.png);
-    width: 100%;
-    height: 600px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  .hero-text {
-    font-size: 35px;
-  }
-  .button {
-    background-color: #4caf50;
-    border: none;
-    text-align: right;
-    color: white;
-    margin-top: 18px;
-    font-weight: 700;
-    border-radius: 50px;
-    width: 187px;
-    height: 45px;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  .box {
-    width: 378px;
-    transition: all 0.5s;
-  }
-}
-@media (max-width: 458px) {
-  .checkbtn {
-    background-image: url(img/Group\ 22.png);
-    display: block;
-    margin-right: 15px;
-    align-items: center;
-  }
-  .logo {
-    margin-left: 10px;
-    align-items: center;
-  }
-  .nav {
-    margin: 0%;
-    width: 0%;
-  }
-  .button {
-    margin-top: 11px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-35%, -1%);
-    transition: all 0.5s;
-  }
-}
-/*recipe-card*/
-.recipe-card-wrap {
-  position: relative;
-  left: 134px;
-  top: 237px;
-}
-.recipe-card {
-  height: 335px;
-  width: 343px;
-  background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0px 3px 6px #00000029;
-}
-.name-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.recipe-card .content {
-  padding: 20px;
-}
-.recipe-card-wrap1 {
-  position: absolute;
-  left: 512px;
-  top: 237px;
-}
-.recipe-card1 {
-  width: 343px;
-  background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0px 3px 6px #00000029;
-}
-.name-content1 {
-  display: flex;
-  justify-content: space-between;
-}
-.recipe-card .content1 {
-  padding: 20px;
-}
-.recipe-card-wrap2 {
-  position: absolute;
-  left: 891px;
-  top: 237px;
-}
-.recipe-card2 {
-  width: 343px;
-  background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0px 3px 6px #00000029;
-}
-.name-content2 {
-  display: flex;
-  justify-content: space-between;
-}
-.recipe-card .content2 {
-  padding: 20px;
-}
-.recipe-card-wrap3 {
-  position: absolute;
-  left: 134px;
-  top: 652px;
-}
-.recipe-card3 {
-  width: 343px;
-  background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0px 3px 6px #00000029;
-}
-.name-content3 {
-  display: flex;
-  justify-content: space-between;
-}
-.recipe-card .content3 {
-  padding: 20px;
-}
-Collapse .header h1 {
-  color: #fff;
-  font-size: 44px;
-}
-.header input {
+
+.searchContainer {
   max-width: 580px;
   height: 50px;
-  border-radius: 25px;
-  background-image: url(../img/search.svg);
+  margin: auto;
+  border-radius: 30px;
+  padding: 0px 10px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  position: relative;
+  
+
 }
-.recipes-blk {
-  background-color: #f2f2f2;
+
+.searchContainer input{
+  width: 580px;
+    border-radius: 30px;
+    height: 50px;
+    margin: auto;
+    padding: 0px 10px;
+    border: none;
 }
-.recipes-blk h2 {
+
+.searchimg img{
+  position: absolute;
+  right: 25px;
+  top: 15px;
+}
+
+.section p{
+  margin-top: 53px;
+  left: 626px;
+  color:#00B158;
   font-size: 20px;
-  font-weight: 400;
-  color: #00b158;
+  text-align: center;
 }
-.section-desc {
+
+.section h4{
+  height: 53px;
+  left: 517px;
+  color:#17285A;
   font-size: 38px;
-  color: #17285a;
+  font-weight: 600;
+  text-align:center;
 }
-.primary-btn {
-  width: 200px;
-  height: 45px;
-  font-size: 16px;
-  font-weight: 500;
-  color: #fff;
-  background-color: #00b158;
-  border-radius: 25px;
-  outline: none;
-  border: 0px;
-  text-transform: uppercase;
+
+
+.flex-conatiner{
+  margin-top: 103px;
+  display:grid;
+  grid-template-columns: auto auto auto;
+  gap: 25px;
+  justify-content: center;
 }
-.recipe-card-wrap {
+
+@media (max-width:1200px) {
+  .flex-conatiner{
+    grid-template-columns: auto auto;
+  }
+
 }
-.recipe-card {
+
+@media (max-width:780px) {
+  .flex-conatiner{
+    grid-template-columns: auto;
+  }
+
+  .add{
+    justify-content: center;
+  }
+  
+}
+
+.flex1{
   width: 343px;
-  background-color: #fff;
-  border-radius: 15px;
+  min-height: 335px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #CBCBCB;
+  border-radius: 15px;
 }
-.name-content {
+
+.flex-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section{
+  max-width:80%;
+  margin: 0 auto;
+}
+
+.overall{
+  padding:20px;
+}
+
+.flex-head h1{
+  font-size:28px;
+  color:#363636;
+  font-weight:500;
+  
+}
+.flex-head img{
+  width: 18px;
+  height: 18px;
+}
+
+.flex-exp h1{    
+    font-size: 14px;
+    color: #363636;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+
+.footer {
+  width: 100%;
+  height: 163px;
+  left: 0;
+  bottom: 0;
+  background-color: #17285a;
+  margin: 0 auto;
+  margin-top: 118px;
+}
+
+.footer-div {
+  background-color: #17285a;
+  opacity: 100%;
+  margin: auto;
+  width: 100%;
+  display: block;
+  margin-top: 129px;
+}
+.yummy{
+  font-size: 40px;
+}
+.yummy-footer .images{
+  margin-top: 15px;
+}
+.yummy-footer{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+  justify-content: space-between;
+  border-bottom: olivedrab;
+}
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.yummy-div {
   display: flex;
   justify-content: space-between;
 }
-.recipe-card .content {
-  padding: 20px;
+#yummy {
+  font-family: 'Apple Chancery', sans-serif;
+  font-size:40px; 
+  color: #ffffff;
+  opacity: 100%;
+  width: 132px;
+  height: 64px;
+}
+.footer-menu a {
+  color: #ffff;
+  font-size:14px;
+  text-decoration: none;
+  margin: 19px;
+}
+.footer-year {
+  border-top: 1px solid #ffffff;
+  padding: 25px 0px;
+  width: 80%;
+  margin: auto;
+}
+.footer-year p {
+  color: #ffffff;
+  text-align: center;
 }
