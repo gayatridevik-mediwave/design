@@ -34,7 +34,7 @@ body {
   border-radius: 33px;
 }
 .header {
-  background-image: url(roza.png);
+  background-image: url(./images/roza.png);
   width: auto;
   height: 255px;
   background-position: center;
@@ -49,7 +49,7 @@ body {
   height: 100%;
   color: #ffffff;
   font-size: 40px;
-  font-weight: bold;
+  font-weight: inherit;
 }
 
 .content {
@@ -86,7 +86,7 @@ body {
   font-weight: bold;
 }
 
-.recipeClass input {
+.text-css input {
   width: 500px;
   height: 45px;
   border-radius: 20px;
@@ -110,6 +110,7 @@ body {
   width: 100px;
   height: 45px;
   margin-top: 15px;
+  border: none;
 }
 
 /* .foodtype {
@@ -134,6 +135,7 @@ body {
 .food-type label {
   color: #363636;
   font-size: 14px;
+  font-weight: 500;
 }
 
 .indrg-type p {

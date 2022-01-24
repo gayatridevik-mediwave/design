@@ -151,6 +151,7 @@ h3 {
 .footer-menu a {
   color: #ffff;
   margin-left: 20px;
+  text-decoration: none;
 }
 .footer-year {
   border-top: 1px solid #ffffff;
