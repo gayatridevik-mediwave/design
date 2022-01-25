@@ -28,6 +28,14 @@ body {
   text-align:center;
 }
 
+@media (max-width: 620px){
+  .nav-group{
+    width: 90%;
+    transition: 0.3;
+  }
+}
+
+
 .nav-items{
   display: flex;
   align-items: center;
@@ -71,6 +79,7 @@ body {
   background-image: url(./images/roza.png);
   background-color: black;
   opacity: 60;
+  background-position: center;
   
   background-size: cover;
   
