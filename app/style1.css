@@ -33,9 +33,10 @@ body {
   text-align: center;
   border-radius: 33px;
 }
-.header {
-  background-image: url(./images/claudio-schwarz-4qJlXK4mYzU-unsplash.png);
-  width: auto;
+.header3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) ,url(./images/grill3.jpg);
+  
+  width: 100%;
   height: 255px;
   background-position: center;
   background-repeat: no-repeat;
@@ -43,7 +44,17 @@ body {
   position: relative;
   height: 381px;
 }
-
+.header-bottom{
+  background-image: url(./images/grill3.jpg);
+  max-width: 997px;
+  width:100%;
+  height: 255px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 381px;
+}
 .header-text {
   display: flex;
   align-items: center;
@@ -96,18 +107,19 @@ h3 {
 .bor-text {
   border-style: hidden;
   background-color: #ffffff;
-  width: 1000px;
-  height: 238px;
-  margin-top: 18px;
+  max-width: 1000px;
+  width:100%;
+  /* height: 238px;
+  margin-top: 18px; */
 }
 
-.cont_rec {
-  padding: 27px 332px 26px 28px;
-}
-
+/* .cont_rec {
+  /* padding: 27px 332px 26px 28px;
+} */
+/* 
 .cont_rec1 {
   padding: 27px 40px 31px 28px;
-}
+} */ 
 
 .footer {
   width: 100%;
