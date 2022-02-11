@@ -7,19 +7,18 @@ const reader = new FileReader(updateimg);
 var imgurl = "";
 var path = "";
 
-updateimg.addEventListener("change", function (event) {
-    console.log("working......");
-    imgurl = event.target.files[0].name;
-    document.getElementById("recipeImages").value = imgurl;
-    path = imgurl;
-    console.log("path,path");
-    console.log(imgurl);
-    if (imgurl) {
-        console.log(imgurl);
-    } else {
-        console.log("working but file not uploaded");
-    }
-});
+// updateimg.addEventListener("change", function (event) {
+//     console.log("working......");
+//     imgurl = event.target.files[0].name;
+//     document.getElementById("recipeImages").value = imgurl;
+//     path = imgurl;
+//     console.log("path,path");
+//     console.log(imgurl);
+//     if (imgurl) {
+//     } else {
+//         console.log("working but file not uploaded");
+//     }
+// });
 
 
 addRecipeForm.addEventListener("submit", function (event) {
