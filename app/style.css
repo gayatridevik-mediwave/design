@@ -42,6 +42,7 @@ body {
   background-size: cover;
   position: relative;
 }
+
 .header-text {
   display: flex;
   align-items: center;
@@ -103,13 +104,19 @@ body {
 .mt-btn {
   text-align: end;
 }
-#buttonclr {
+
+
+.mt-btn input {
+  display: none;
+}
+
+.mt-btn label {
   background-color: #00b158;
   border-radius: 33px;
   color: #ffffff;
-  width: 100px;
+  padding:8.5px 33px;
   height: 45px;
-  margin-top: 15px;
+  margin-top: 8.5px 0;
   border: none;
 }
 
@@ -158,6 +165,12 @@ body {
 
 .indrg-type .prepare {
   height: 272px;
+}
+
+#mention{
+  text-align:left;
+  font-size: 14px;
+  color: #363636;
 }
 
 .addrecipebtn {

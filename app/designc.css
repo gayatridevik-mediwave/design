@@ -92,10 +92,15 @@ display:none;
   }
 }
 
+
+.RecipieContainer{
+  width: fit-content;
+  margin: auto;
+}
+
 .add{
    display:flex;
-   justify-content: end;
-   padding: 10px 40px;
+   padding: 10px 0s;
    margin-bottom: 18px;
    
   
@@ -111,13 +116,13 @@ display:none;
 
 .header {
   padding: 235px 0px;
-  background-image: url(./images/roza.png);
+  background-image: linear-gradient(rgba(0,0,0,0.5) ,rgba(0,0,0,0.5)),url(./images/roza.png);
   background-color: black;
   opacity: 60;
   background-position: center;
   
   background-size: cover;
-  
+  height: 160px; 
 }
 
 .header-content h1{
